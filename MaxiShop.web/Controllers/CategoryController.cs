@@ -55,7 +55,7 @@ namespace MaxiShop.web.Controllers
             if (!ModelState.IsValid) { 
                 return BadRequest(ModelState);    
             }
-            _dbContext.Category.Add(category);  //for store 
+            _dbContext.Category.Add(category);   //for store 
             _dbContext.SaveChanges();
             return Ok();
         }
